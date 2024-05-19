@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Genius - TEA</title>
+    <link rel="shortcut icon" type="image/jpg" href="imagens/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/genius_tea.css">
+</head>
+
+<body>
+
+    <div class="content-wrapper-center">
+
+        <header class="header">
+            <a href="index.html">
+                <img src="imagens/genius_icon.png" width="40" alt="Icon Jogo Genius">
+                <img src="imagens/genius_logo.png" width="90" alt="Logotipo Jogo Genius">
+            </a>
+            <nav>
+                <input type="checkbox" class="menu-btn hide" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+                    <span class="nav-icon"></span>
+                </label>
+                <ul class="header-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tea.html">Tea</a></li>
+                    <li><a href="daltonicos.html">Daltônicos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Banner -->
+        <section class="hero row">
+            <div class="content sm-12 lg-7">
+                <header>
+                    <h1 class="hero_title">Jogo Genius &amp; seus benefícios para pessoas com TEA</h1>
+                    <p>Um jogo projetado para ser acessível e divertido para pessoas com Transtorno do Espectro Autista (TEA), oferecendo uma experiência estimulante e socialmente envolvente. O jogo é adequado para pessoas de todas as idades e níveis de habilidade, adaptável para atender às necessidades individuais.</p>
+                </header>
+            </div>
+            <div class="imagem sm-12 lg-5">
+                <img src="imagens/TEA.png" alt="TEA" class="hero_image">
+            </div>
+        </section>        
+
+        <article class="contato row">
+            <div class="contato_content sm-12 lg-8-12">
+                <h2 class="contato_title">Instruções</h2>
+                <ol>
+                    <li>Clique em ligar e em seguida clique em Inicio</li>
+                    <li>Genius começará a acender uma das quatro cores</li>
+                    <li>Clique na cor que ele acendeu e aguarde para que ele de sequência em uma nova cor</li>
+                    <li>A cada rodada correta, ele acrescentará uma cor aleatória em sua sequência</li>
+                </ol>
+                <ul>
+                    <li>Obs: O modo Strict zera o jogo caso você erre a sequência</li>
+                </ul>
+            </div>
+            <div class="contato_image sm-12 lg-1-7">
+                <img src="imagens/genius_game.png" alt="Imagem jogo genius">
+            </div>
+        </article>
+
+        <!-- gameandfeedback_container -->
+        <section class="gameandfeedback_container">
+            <ul>
+                <li>
+                    <h1>COMECE A JOGAR</h1>
+                </li>
+            </ul>
+            <div class="imagem sm-12 md-1-6 lg-1-5">
+                <div id="outer-circle">
+                    <div id="topleft"></div><!--Verde-->
+                    <div id="topright"></div><!--Vermelho-->
+                    <div id="bottomleft"></div><!--Amarelo-->
+                    <div id="bottomright"></div><!--Azul-->
+                    <div id="inner-circle">
+                        <div id="title">GÊNIUS</div>
+                        <div id="switches">
+                            <input type="checkbox" class="toggle" id="on">
+                            <button class="button" id="start">Inicio</button>
+                            <input type="checkbox" class="toggle" id="strict">
+                        </div>
+                        <div class="text1">
+                            <span>LIGAR</span><span>STRICT</span>
+                        </div>
+                        <div id="turn"></div><!-- Quando liga o jogo - pontos-->
+                        <div class="text2">
+                            PONTOS
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audios-->
+                <audio id="clip1">
+                    <source src="sons/simonSound1.mp3"></source>
+                </audio>
+                <audio id="clip2">
+                    <source src="sons/simonSound2.mp3"></source>
+                </audio>
+                <audio id="clip3">
+                    <source src="sons/simonSound3.mp3"></source>
+                </audio>
+                <audio id="clip4">
+                    <source src="sons/simonSound4.mp3"></source>
+                </audio>
+                <script  src="js/script_tea.js"></script>
+            </div>
+        </section>
+
+        <section class="gameandfeedback_container">
+            <div class="content sm-12 lg-12">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdb7jIma8slYrbkvMVc9WE3LH-2mNJ90W-y8W7q81pNmNxCXg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </section>
+
+        <!-- container_devandbeneficios -->
+        <section class="container_devandbeneficios" >
+            <h2 class="container_devandbeneficios_title">Benefícios</h2>
+            <div class="container_devandbeneficios_wrapper row">
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça01.png" alt="Peça Quebra-Cabeça 01" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 01</h3>
+                            <p>Maior facilidade de adaptação diante de mudanças repentinas e situações adversas</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça02.png" alt="Peça Quebra-Cabeça 02" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 02</h3>
+                            <p>Mais paciência, persistência e resiliência em situações difíceis ou negativas </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça03.png" alt="Peça Quebra-Cabeça 03" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 03</h3>
+                            <p>Melhor desempenho em tarefas escolares, de trabalho ou da vida cotidiana
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça04.png" alt="Peça Quebra-Cabeça 04" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 04</h3>
+                            <p>Aumento da tolerância ao erro
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça05.png" alt="Peça Quebra-Cabeça 05" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 05</h3>
+                            <p>Desenvolvimento de novas habilidades e de novos comportamentos
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <article class="container_devandbeneficio sm-12 lg-4">
+                    <div class="container_devandbeneficio_card">
+                        <img src="imagens/peça06.png" alt="Peça Quebra-Cabeça 06" class="container_devandbeneficio_thumb">
+                        <div class="container_devandbeneficio_content">
+                            <h3 class="container_devandbeneficio_nome">Benefício 06</h3>
+                            <p>Melhoria na comunicação, interação social e aumento da empatia
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <!-- Results section -->
+        <section class="results row">
+            <article class="sm-12 md-6 lg-5">
+                <h2>Análise de resultados</h2>
+                <p>
+                    Desenvolvimento das habilidades cognitivas, como memória, atenção, e pensamento estratégico, enquanto promove interações sociais positivas. O jogo envolve uma combinação de sorte e habilidade, oferecendo oportunidades para aprender e praticar várias habilidades, incluindo reconhecimento de padrões, sequenciamento e tomada de decisões.
+                </p>
+                <p>
+                    Em resumo, o Genius é mais do que apenas um jogo; é uma ferramenta educacional e terapêutica que promove o desenvolvimento cognitivo e social de indivíduos com TEA, proporcionando uma experiência de jogo inclusiva e enriquecedora.
+                </p>
+            </article>
+            <div class="imagem sm-12 md-6 lg-8-12">
+                <img src="imagens/resultados.png" alt="">
+            </div>
+        </section>    
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="content-wrapper-center row">
+            <section class="sm-12 md-9 lg-6">
+                <header>
+                    <a href="index.html" class="logo">Jogo Genius</a>
+                    <p>ADAPTADO PARA AUTISTAS &amp; DALTÔNICOS</p>
+                </header>
+            </section>
+
+            <section class="sm-12 lg-3">
+                <header>
+                    <h3>Contato</h3>
+                </header>
+                <ul>
+                    <li>gabriel.santana3007@gmail.com</li>
+                    <li>(12) 98305-2028</li>
+                </ul>
+                <ul>
+                    <li>jessica@gmail.com</li>
+                    <li>(12) 98134-2109</li>
+                </ul>
+                <ul>
+                    <li>karideoliveira94@gmail.com</li>
+                    <li>(12) 99672-0773</li>
+                </ul>
+            </section>
+
+            <section class="copyright sm-12">
+                &copy; Gabriel Santana - Jessica Aparecida - Karina de Oliveira - <wbr>
+                Todos os direitos reservados <wbr>
+            </section>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
